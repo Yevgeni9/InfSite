@@ -1,6 +1,6 @@
 #blob {
     background-color: white;
-    height: 68vmax;
+    height: 88vmax;
     aspect-ratio: 1;
     position: fixed;
     left: 50%;
@@ -101,13 +101,14 @@ section {
 
 p {
     font-family: 'Space Mono', monospace;
-    font-size: clamp(4rem, 5vw, 5rem);
+    font-size: clamp(3rem, 5vw, 10rem);
+    padding: 0rem clamp(1rem, 2vw, 3rem);
     color: white;
     margin: 0rem;
     position: absolute;
     left: 20%;
     top: 60%;
-    translate: -50% -50%;
+    translate: -30% -50%;
     z-index: 3;
     opacity: 1;
 }
@@ -119,10 +120,11 @@ h5 {
     margin: 0rem;
     position: absolute;
     left: 10%;
-    top: 66%;
+    top: 68%;
     translate: -10% -20%;
     z-index: 3;
     opacity: 1;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
 }
 
 .hidden {
@@ -157,12 +159,12 @@ h5 {
 
   .scroll-icon {
     display: block;
-    position: relative;
+    position: absolute;
     height: 3em;
     width: 1.5em;
     border: .25em solid #fff;
     border-radius: 1em;
-    translate: 0% 800%;
+    translate: 0% 300%;
   }
 
 @keyframes scroll_2 {
