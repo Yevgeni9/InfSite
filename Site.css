@@ -55,6 +55,7 @@ body {
     background-color: rgb(12, 12, 12);
     height: 100vh;
     margin: 0rem;
+    scroll-behavior: smooth;
 }
 
   h1 {
@@ -209,4 +210,22 @@ video:hover {
 
 body::-webkit-scrollbar{
     display: none;
+}
+
+.button2 {
+    border-radius: 100%;
+    border: none;
+    height: 6vh;
+    width: 6vh;
+    translate: 0vh 68vh;
+    scale: 1.3;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+    scale: 1.6;
 }
