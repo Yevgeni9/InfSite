@@ -62,7 +62,6 @@ body {
     font-family: 'Space Mono', monospace;
     font-size: clamp(3rem, 5vw, 10rem);
     color: white;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
     margin: 0rem;
     position: absolute;
@@ -79,7 +78,6 @@ body {
     font-family: 'Space Mono', monospace;
     font-size: clamp(3rem, 1vw, 1rem);
     color: white;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
     margin: 0rem;
     position: absolute;
@@ -181,7 +179,7 @@ video {
     border-width: 5px;
     border-radius: 10px;
     border-color: white;
-    transition-duration: 1200ms;
+    transition-duration: 600ms;
 }
 
 video:hover {
@@ -192,7 +190,7 @@ video:hover {
 .button1 {
     overflow: hidden;
     transition: all 0.3s ease;
-    translate: -50vh 36vh;
+    translate: -50vh 37vh;
     cursor: pointer;
     border-radius: 5px;
     height: 200%;
