@@ -29,12 +29,3 @@ $("a[href='#top']").click(function() {
     return false;
   });
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  (function smoothscroll(){
-    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    if (currentScroll > 0) {
-         window.requestAnimationFrame(smoothscroll);
-         window.scrollTo (0,currentScroll - (currentScroll/5));
-    }
-})();
