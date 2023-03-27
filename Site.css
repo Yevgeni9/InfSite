@@ -1,6 +1,7 @@
 body {
     background-color: rgb(12, 12, 12);
     margin: 0rem;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
@@ -14,7 +15,7 @@ section {
 }
 
 #blob {
-    height: 88vmax;
+    height: 62vmax;
     aspect-ratio: 1;
     position: fixed;
     left: 50%;
@@ -32,7 +33,7 @@ section {
 }
 
 #blur {
-    height: 530vh;
+    height: 660vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -77,9 +78,7 @@ h1 {
     color: white;
     margin: 0rem;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
+    top: 40%;
     animation: text 6s;
     cursor: default;
 }
@@ -90,9 +89,7 @@ h2 {
     color: white;
     margin: 0rem;
     position: absolute;
-    left: 50%;
-    top: 60%;
-    translate: -50% -50%;
+    top: 55%;
     animation: text 6s;
     cursor: default;
 }
@@ -101,11 +98,10 @@ p {
     font-size: clamp(3rem, 5vw, 10rem);
     padding: 0rem clamp(1rem, 2vw, 3rem);
     color: white;
-    margin: 0rem;
+    margin: 2rem;
     position: absolute;
-    left: 20%;
+    left: 10%;
     top: 60%;
-    translate: -30% -50%;
     cursor: default;
 }
 
@@ -113,12 +109,10 @@ h5 {
     font-family: monospace;
     font-size: clamp(2rem, 0vw, 0rem);
     color: white;
-    margin: 0rem;
+    margin-right: 40%;
     position: absolute;
     left: 10%;
     top: 68%;
-    translate: -10% -20%;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
     cursor: default;
 }
 
@@ -129,7 +123,6 @@ h5 {
 
 .show {
     transform: translateX(0);
-    transition-timing-function: ease-in-out;
     transition-delay: 200ms;
 }
 
@@ -143,7 +136,6 @@ h5 {
     top: .6em;
     margin-left: -.25em;
     border-radius: 50%;
-    backface-visibility: hidden;
     animation: scroll_2 2s ease-out infinite;
 }
 
@@ -159,7 +151,8 @@ h5 {
 
 video {
     position: absolute;
-    translate: 120% 50%;
+    top: 50%;
+    left: 65%;
     border-style: outset;
     border-width: 5px;
     border-radius: 1vh;
@@ -174,10 +167,9 @@ video:hover {
 
 .button1 {
     position: absolute;
-    overflow: hidden;
     transition: all 0.3s ease;
-    left: 12%;
-    top: 75%;
+    left: 14%;
+    top: 90%;
     cursor: pointer;
     border-radius: 5px;
     height: 5vh;
@@ -209,4 +201,19 @@ video:hover {
     background-color: black;
     color: white;
     scale: 1.6;
+}
+
+@media screen and (max-width: 1000px) {
+    video {
+        opacity: 0;
+    }
+
+    p {
+        font-size: clamp(2.5rem, 1vw, 1rem);
+    }
+
+    h5 {
+        font-size: clamp(1.5rem, 1vw, 1rem);
+        margin-right: 20%;
+    }
 }
