@@ -2,6 +2,7 @@ body {
     background-color: rgb(12, 12, 12);
     margin: 0rem;
     overflow-x: hidden;
+    color: white;
 }
 
 body::-webkit-scrollbar{
@@ -11,7 +12,7 @@ body::-webkit-scrollbar{
 section {
     display: grid;
     place-items: center;
-    min-height: 130vh;
+    min-height: 110vh;
 }
 
 #blob {
@@ -33,74 +34,37 @@ section {
 }
 
 #blur {
-    height: 660vh;
+    height: 570vh;
     width: 100%;
     position: absolute;
     z-index: -1;
     backdrop-filter: blur(12vmax);
 }
 
-@keyframes rotate {
-    from {
-        rotate: 0deg;
-    }
-
-    50% {
-        scale: 1 1.2;
-    }
-
-    to {
-        rotate: 360deg;
-    }
-}
-
-@keyframes text {
-    from {
-        opacity: 0;
-        transform: translateY(25%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes scroll_2 {
-    0%   { transform: translateY(0); opacity: 1; }
-    25%  { opacity: 1; }
-    75%  { transform: translateY(.75em); opacity: 0; }
-    100% { transform: translateY(0); opacity: 0; }
-}
-
 h1 {
     font-size: clamp(3rem, 5vw, 10rem);
-    color: white;
-    margin: 0rem;
     position: absolute;
+    margin: 0rem;
     top: 40%;
-    animation: text 6s;
+    animation: text 5s;
     cursor: default;
 }
 
 h2 {
     font-family: monospace;
     font-size: clamp(3rem, 1vw, 1rem);
-    color: white;
-    margin: 0rem;
     position: absolute;
+    margin: 0rem;
     top: 55%;
-    animation: text 6s;
+    animation: text 5s;
     cursor: default;
 }
 
 p {
     font-size: clamp(3rem, 5vw, 10rem);
-    padding: 0rem clamp(1rem, 2vw, 3rem);
-    color: white;
-    margin: 2rem;
     position: absolute;
-    left: 10%;
+    margin: 2rem;
+    left: 7%;
     top: 60%;
     cursor: default;
 }
@@ -108,7 +72,6 @@ p {
 h5 {
     font-family: monospace;
     font-size: clamp(2rem, 0vw, 0rem);
-    color: white;
     margin-right: 40%;
     position: absolute;
     left: 10%;
@@ -146,12 +109,12 @@ h5 {
     width: 1.5em;
     border: .25em solid #fff;
     border-radius: 1em;
-    translate: 0% 300%;
+    top: 80%;
 }
 
 video {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 65%;
     border-style: outset;
     border-width: 5px;
@@ -169,7 +132,7 @@ video:hover {
     position: absolute;
     transition: all 0.3s ease;
     left: 14%;
-    top: 90%;
+    top: 94%;
     cursor: pointer;
     border-radius: 5px;
     height: 5vh;
@@ -191,6 +154,7 @@ video:hover {
     height: 6vh;
     width: 6vh;
     left: 50%;
+    translate: 0% 180%;
     scale: 1.3;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
@@ -201,6 +165,39 @@ video:hover {
     background-color: black;
     color: white;
     scale: 1.6;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.2;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scroll_2 {
+    0%   { transform: translateY(0); opacity: 1; }
+    25%  { opacity: 1; }
+    75%  { transform: translateY(.75em); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
 }
 
 @media screen and (max-width: 1000px) {
