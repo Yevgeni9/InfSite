@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(37, 37, 37);
     margin: 0rem;
     overflow-x: hidden;
     color: white;
@@ -16,7 +16,7 @@ section {
 }
 
 #blob {
-    height: 62vmax;
+    height: 31vmax;
     aspect-ratio: 1;
     position: fixed;
     left: 50%;
@@ -34,7 +34,7 @@ section {
 }
 
 #blur {
-    height: 570vh;
+    height: 680vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -72,7 +72,7 @@ p {
 h5 {
     font-family: monospace;
     font-size: clamp(2rem, 0vw, 0rem);
-    margin-right: 40%;
+    margin-right: 45%;
     position: absolute;
     left: 10%;
     top: 68%;
@@ -82,11 +82,13 @@ h5 {
 .hidden {
     transition: all 2s;
     transform: translateX(-100%);
+    opacity: 0;
 }
 
 .show {
     transform: translateX(0);
     transition-delay: 200ms;
+    opacity: 1;
 }
 
 .scroll-icon__dot {
@@ -117,7 +119,7 @@ video {
     top: 60%;
     left: 65%;
     border-style: outset;
-    border-width: 5px;
+    border-width: 0.5vh;
     border-radius: 1vh;
     border-color: white;
     transition-duration: 300ms;
@@ -213,4 +215,46 @@ video:hover {
         font-size: clamp(1.5rem, 1vw, 1rem);
         margin-right: 20%;
     }
+}
+
+.logos {
+    display: flex;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 400ms;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+img {
+    height: 33vh;
+    translate: -50% 50%;
+}
+
+div p {
+    left: 0%;
+    translate: 0% 380%;
+    position: relative;
+}
+
+div h5 {
+    margin-right: 0%;
+    left: 5%;
+    top: 56%;
+}
+
+.card {
+  position: absolute;
+  display: inline;
+  top: 68%;
+  width: 160vh;
+  height: 60vh;
+  border: 0.5vh solid rgb(255, 255, 255);  
+  background-color: rgb(43, 43, 43); 
+  border-radius: 2vh;
 }
