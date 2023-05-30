@@ -212,8 +212,9 @@ video:hover {
     }
 
     h5 {
-        font-size: clamp(1.5rem, 1vw, 1rem);
+        font-size: clamp(1rem, 1vw, 1rem);
         margin-right: 20%;
+        margin-top: 5%;
     }
 }
 
@@ -251,7 +252,7 @@ div h5 {
 .card {
   position: absolute;
   display: inline;
-  top: 68%;
+  top: 69%;
   width: 160vh;
   height: 60vh;
   border: 0.5vh solid rgb(255, 255, 255);  
